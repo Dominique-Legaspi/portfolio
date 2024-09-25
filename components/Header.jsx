@@ -9,7 +9,7 @@ const Header = () => {
     <header className="py-8 xl:py-12 text-white">
         <div className="container mx-auto flex justify-between items-center">
             <Link href="/">
-                <h1 className="text-4xl font-semibold">
+                <h1 className="text-5xl font-semibold">
                     dom<span className="text-accent">.</span>dev
                 </h1>
             </Link>

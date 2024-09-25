@@ -17,11 +17,11 @@ const BlindsTransition = () => {
                         <Blinds/>
                     </div>
                 </div>
-{/* 
-                <motion.div 
+
+                {/* <motion.div 
                 className="h-screen w-screen fixed bg-primary top-0 pointer-events-none" 
                 initial={{opacity: 1}}
-                animate={{opacity: 0, transition: {delay: 0.2, duration: 0.4, ease: 'easeInOut'}}}
+                animate={{opacity: 0, transition: {delay: 0.2, duration: 0.4, ease: 'easeOut'}}}
                 /> */}
 
             </AnimatePresence>

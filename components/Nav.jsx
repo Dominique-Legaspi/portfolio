@@ -2,27 +2,33 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { House, CircleUserRound, Briefcase, Lightbulb, SquareChartGantt } from 'lucide-react'
 
 const links = [
     {
         name: "home",
-        path: "/"
+        path: "/",
+        icon: <House/>
     },
     {
         name: 'about',
         path: "/about",
+        icon: <CircleUserRound/>
     },
     {
         name: 'experience',
-        path: "/experience"
+        path: "/experience",
+        icon: <Briefcase/>
     },
     {
         name: 'projects',
         path: "/projects",
+        icon: <Lightbulb/>
     },
     {
         name: 'resume',
         path: "/resume",
+        icon: <SquareChartGantt/>
     },
 ];
 
@@ -36,8 +42,8 @@ const Nav = () => {
                     href={link.path}
                     key={index} 
                     className={`${link.path === pathname && "text-accent border-b-2 border-accent"}
-                     font-medium hover:text-accent transition-all`}>
-                        {link.name}
+                     font-medium text-xl hover:text-accent transition-all`}>
+                        <div className="flex flex-row gap-1 justify-center items-center">{link.icon} {link.name}</div>
                     </Link>
                 );
             })}

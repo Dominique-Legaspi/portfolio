@@ -10,7 +10,7 @@ const PageTransition = ({children}) => {
     return <AnimatePresence>
             <div key={pathname}>
                 <motion.div 
-                initial={{opacity: 1}} 
+                initial={{opacity: 1,}} 
                 animate={{
                     opacity: 0, 
                     transition: {delay: 0.75, duration: 0.4, ease: "easeInOut"}}}
