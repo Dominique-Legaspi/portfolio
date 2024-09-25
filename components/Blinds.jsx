@@ -1,14 +1,14 @@
 import { motion } from "framer-motion"
 
-const stairAnimation = {
+const blindsAnimation = {
     initial: {
-        top: "0%",
+        right: "0%",
     },
     animate: {
-        top: "100%",
+        right: "100%",
     },
     exit: {
-        top: ["100%", "0%"],
+        right: ["100%", "0%"],
     },
 };
 
@@ -18,7 +18,7 @@ const reverseIndex = (index)=> {
     return totalSteps - index - 1;
 };
 
-const Stairs = () => {
+const Blinds = () => {
   return (
     <>
         {/* render 6 motion divs, each representing a step of the stairs */}
@@ -26,14 +26,14 @@ const Stairs = () => {
             return (
                 <motion.div 
                 key={index} 
-                variants={stairAnimation} 
+                variants={blindsAnimation} 
                 initial="initial"
                 animate="animate"
                 exit="exit"
                 transition={{
-                    duration: 0.4,
+                    duration: 0.6,
                     ease: 'easeInOut',
-                    delay: reverseIndex(index) * 0.1
+                    delay: reverseIndex(index) * 0.05
                 }} 
                 className="h-full w-full bg-[#edb33e] relative"
                 />
@@ -43,4 +43,4 @@ const Stairs = () => {
   )
 }
 
-export default Stairs;
+export default Blinds;
