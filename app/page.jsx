@@ -21,16 +21,6 @@ const Home = () => {
                             <span>Download Resume</span>
                             <FiDownload className="text-xl" />
                         </Button>
-                        <div className="mb-8 xl:mb-0">
-                            <Social 
-                            containerStyles="flex gap-6" 
-                            iconStyles="w-[120px] h-9 gap-2 border border-accent rounded-full 
-                            flex justify-center items-center 
-                            text-accent text-base lowercase
-                            hover:bg-accent hover:text-primary hover:transition-all duration-500"
-                            />
-                        </div>
-
                     </div>
                 </div>
                 <div className="order-1 xl:order-none mb-8 xl:mb-0">

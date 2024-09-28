@@ -17,13 +17,17 @@ const experiences = [
     title: "Web Developer",
     company: "Another company",
     years: "2020 - current",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: 
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit,\
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     title: "Web Developer",
     company: "Another company",
     years: "2020 - current",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit,\
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
 ]
 
@@ -35,15 +39,15 @@ const Experience = () => {
         initial={{opacity:0}}
         animate={{opacity:1, transition: {delay: 1.4, duration: 0.4, ease: "easeIn"}}}
         >
+          <h1 className="h1 text-6xl text-accent tracking-wider">Experience</h1>
           {experiences.map((experience, index)=> {
             return <div key={index}>
-              <div className="p-4">
-                <div>
+              <div className="mb-4">
+                <div className="p-8">
                   <div className="flex flex-row justify-between items-end pb-4"><h2 className="h2 text-accent">
-                    {experience.title}</h2> <p>{experience.years}
-                      </p></div>
-                  <h3 className="text-white/70">{experience.company}</h3>
-                  <p className="pb-6">{experience.description}</p>
+                    {experience.title}</h2> <p>{experience.years}</p></div>
+                  <p className="text-white/70">{experience.company}</p>
+                  <p className="pb-16">{experience.description}</p>
                   <div className="border-b border-white/20 w-full"></div>
                 </div>
               </div>

@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation'
 import Link from 'next/link';
 import { CiMenuFries } from 'react-icons/ci'
 import { House, CircleUserRound, Briefcase, Lightbulb, SquareChartGantt } from 'lucide-react'
+import Social from './Social';
 
 
 const links = [
@@ -19,20 +20,15 @@ const links = [
         icon: <CircleUserRound/>
     },
     {
-        name: 'experience',
-        path: "/experience",
-        icon: <Briefcase/>
-    },
-    {
         name: 'projects',
         path: "/projects",
         icon: <Lightbulb/>
     },
-    {
-        name: 'resume',
-        path: "/resume",
-        icon: <SquareChartGantt/>
-    },
+    // {
+    //     name: 'resume',
+    //     path: "/resume",
+    //     icon: <SquareChartGantt/>
+    // },
 ];
 
 const MobileNav = () => {
@@ -65,6 +61,12 @@ const MobileNav = () => {
                         </SheetClose>
                     })}
                 </nav>
+                    <div className="mt-16 flex justify-center items-center">
+                        <Social 
+                        containerStyles="flex gap-6" 
+                        iconStyles="flex justify-center items-center text-base
+                        hover:text-accent hover:transition-all duration-500"/>
+                    </div>
             </SheetContent>
         </Sheet>
     )
