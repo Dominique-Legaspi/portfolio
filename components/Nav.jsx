@@ -11,11 +11,11 @@ const links = [
         path: "/",
         icon: <House/>
     },
-    {
-        name: 'about',
-        path: "/about",
-        icon: <CircleUserRound/>
-    },
+    // {
+    //     name: 'about',
+    //     path: "/about",
+    //     icon: <CircleUserRound/>
+    // },
     {
         name: 'projects',
         path: "/projects",
